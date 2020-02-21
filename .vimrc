@@ -2,6 +2,10 @@
 set nocompatible
 filetype off
 
+if has("syntax")
+  syntax on
+endif
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
@@ -14,9 +18,12 @@ Plugin 'crusoexia/vim-monokai'
 call vundle#end()
 filetype plugin indent on
 
+set encoding=utf-8
+set fileencodings=utf-8,cp949
 set expandtab
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
 set autoindent
 set backspace=indent,eol,start
 set ruler
